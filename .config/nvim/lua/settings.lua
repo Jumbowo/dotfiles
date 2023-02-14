@@ -12,7 +12,7 @@ vim.opt.smarttab = true
 vim.opt.cindent = true
 vim.opt.scrolloff = 4
 
-vim.opt.signcolumn = 'no'
+vim.opt.signcolumn = 'yes'
 
 vim.opt.termguicolors = true
 
