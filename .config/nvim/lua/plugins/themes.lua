@@ -11,5 +11,8 @@ return {
       strings = "none",
       variables = "none",
     },
+    lualine = {
+      transparent = true,
+    },
   }
 }

@@ -23,3 +23,7 @@ map("n", "K", "<cmd>Lspsaga hover_doc<CR>", {noremap = true, silent = true})
 map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", {noremap = true, silent = true})
 map("n", "gD", "<cmd>Lspsaga peek_definition<CR>", {noremap = true, silent = true})
 map("n", "gr", "<cmd>Lspsaga rename<CR>", {noremap = true, silent = true})
+
+-- Telescope
+map("n", "<leader>f", "<cmd>Telescope find_files<CR>", {noremap = true, silent = true})
+map("n", "<leader>r", "<cmd>Telescope live_grep<CR>", {noremap = true, silent = true})

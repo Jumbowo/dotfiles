@@ -29,8 +29,6 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-VI_MODE_SET_CURSOR=true
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
