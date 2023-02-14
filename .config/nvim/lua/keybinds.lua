@@ -1,8 +1,6 @@
-local map = vim.api.nvim_set_keymap 
+local map = vim.api.nvim_set_keymap
 
--- Leader
-local silent = { silent = true, noremap = true } map("", "<Space>", "<Nop>", silent) 
-vim.g.mapleader = " " 
+vim.g.mapleader = " "
 
 -- Window navigation with Ctrl + hjkl
 map("n", "<C-h>", "<C-w>h", {noremap = true, silent = false})
@@ -22,7 +20,13 @@ map("n", "<S-TAB>", ":BufferLineCyclePrev<CR>", {noremap = true, silent = true})
 map("n", "K", "<cmd>Lspsaga hover_doc<CR>", {noremap = true, silent = true})
 map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", {noremap = true, silent = true})
 map("n", "gD", "<cmd>Lspsaga peek_definition<CR>", {noremap = true, silent = true})
+map("n", "ga", "<cmd>Lspsaga code_action<CR>", {noremap = true, silent = true})
+map("n", "gh", "<cmd>Lspsaga lsp_finder<CR>", {noremap = true, silent = true})
+map("n", "gt", "<cmd>Lspsaga peek_type_definition<CR>", {noremap = true, silent = true})
 map("n", "gr", "<cmd>Lspsaga rename<CR>", {noremap = true, silent = true})
+map("n", "gR", "<cmd>Lspsaga rename ++project<CR>", {noremap = true, silent = true})
+map("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>", {noremap = true, silent = true})
+map("n", "]e", "<cmd>Lspsaga diagnostic_jump_next<CR>", {noremap = true, silent = true})
 
 -- Telescope
 map("n", "<leader>f", "<cmd>Telescope find_files<CR>", {noremap = true, silent = true})

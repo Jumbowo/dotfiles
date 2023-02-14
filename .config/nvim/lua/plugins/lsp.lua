@@ -31,6 +31,11 @@ return {
 
       lsp.nvim_workspace()
       lsp.setup()
+
+      -- Override defualt vim.diagnostic.config
+      vim.diagnostic.config({
+        virtual_text = true,
+      })
     end
   },
 
@@ -43,7 +48,7 @@ return {
         border_style = "solid",
         -- Breadcrumbs
         symbol_in_winbar = {
-          enable = false,
+          enable = true,
         }
       })
     end,
