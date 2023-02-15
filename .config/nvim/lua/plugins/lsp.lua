@@ -42,7 +42,6 @@ return {
   -- LSP enhancements with lspsaga
   {
     'glepnir/lspsaga.nvim',
-    -- event = "BufRead",
     config = function()
       require("lspsaga").setup({
         border_style = "solid",

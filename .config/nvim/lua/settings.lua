@@ -24,3 +24,9 @@ vim.opt.pumheight = 12
 vim.opt.fillchars:append { eob = " " }
 
 require("onedark").load()
+
+-- Menu transparency
+vim.cmd([[
+  highlight! link NormalFloat Normal
+  highlight! link PMenu Normal
+]])
