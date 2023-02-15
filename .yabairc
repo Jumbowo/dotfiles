@@ -1,0 +1,18 @@
+# Tiling config
+yabai -m config layout                        bsp
+
+yabai -m config top_padding                   "9"
+yabai -m config bottom_padding                "9"
+yabai -m config left_padding                  "9"
+yabai -m config right_padding                 "9"
+yabai -m config window_gap                    "9"
+
+yabai -m config mouse_follows_focus           off
+yabai -m config focus_follows_mouse           off
+
+# Rules
+yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
+yabai -m rule --add label="App Store" app="^App Store$" manage=off
+yabai -m rule --add label="System Settings" app="^System Settings$" title=".*" manage=off
+yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
+yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
