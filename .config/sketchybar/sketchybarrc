@@ -7,7 +7,7 @@ sketchybar --bar height=32        \
                  sticky=on        \
                  padding_left=10  \
                  padding_right=10 \
-                 color=#FFFFFFF00
+                 color=0xcc000000
 
 # Changing defaults
 sketchybar --default icon.font="Hack Nerd Font:Bold:17.0"  \
