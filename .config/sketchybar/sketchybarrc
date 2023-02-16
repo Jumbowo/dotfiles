@@ -1,13 +1,13 @@
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
 
 # Bar appearance
-sketchybar --bar height=32        \
+sketchybar --bar height=40        \
                  blur_radius=0    \
                  position=top     \
-                 sticky=on        \
-                 padding_left=10  \
-                 padding_right=10 \
-                 color=0xcc000000
+                 sticky=on       \
+                 padding_left=5  \
+                 padding_right=5 \
+                 color=0x00ffffff
 
 # Changing defaults
 sketchybar --default icon.font="Hack Nerd Font:Bold:17.0"  \
@@ -16,59 +16,58 @@ sketchybar --default icon.font="Hack Nerd Font:Bold:17.0"  \
                      label.color=0xffffffff                \
                      padding_left=5                        \
                      padding_right=5                       \
+                     y_offset=-1                            \
                      label.padding_left=4                  \
-                     label.padding_right=4                 \
-                     icon.padding_left=4                   \
-                     icon.padding_right=4
+                     label.padding_right=12                 \
+                     icon.padding_left=12                  \
+                     icon.padding_right=6                  \
+                     background.drawing=on                 \
+                     background.height=24                  \
+                     background.color=0xcc000000           \
+                     background.corner_radius=10           \
+                     background.padding_left=5             \
+                     background.padding_right=5            \
 
 # Spaces
-SPACE_ICONS=("1" "2" "3" "4" "5" "6" "7" "8" "9" "10")
-
-for i in "${!SPACE_ICONS[@]}"
-do
-  sid=$(($i+1))
-  sketchybar --add space space.$sid left                                 \
-             --set space.$sid associated_space=$sid                      \
-                              icon=${SPACE_ICONS[i]}                     \
-                              background.color=0x44ffffff                \
-                              background.corner_radius=5                 \
-                              background.height=20                       \
-                              background.drawing=off                     \
-                              label.drawing=off                          \
-                              script="$PLUGIN_DIR/space.sh"              \
-                              click_script="yabai -m space --focus $sid"
-done
+# SPACE_ICONS=("1" "2" "3" "4" "5" "6" "7" "8" "9" "10")
+#
+# for i in "${!SPACE_ICONS[@]}"
+# do
+#   sid=$(($i+1))
+#   sketchybar --add space space.$sid left                                 \
+#              --set space.$sid associated_space=$sid                      \
+#                               icon=${SPACE_ICONS[i]}                     \
+#                               background.drawing=on                      \
+#                               background.padding_left=0                  \
+#                               background.padding_left=0                  \
+#                               label.drawing=_lefff                          \
+#                               script="$PLUGIN_DIR/space.sh"              
+# done
 
 # Left items
-sketchybar --add item space_separator left                         \
-           --set space_separator icon=                            \
-                                 padding_left=10                   \
-                                 padding_right=10                  \
-                                 label.drawing=off                 \
-                                                                   \
-           --add item front_app left                               \
+sketchybar --add item front_app left                               \
            --set front_app       script="$PLUGIN_DIR/front_app.sh" \
+                                 label.padding_left=12             \
                                  icon.drawing=off                  \
+                                 background.color=0xff262626       \
            --subscribe front_app front_app_switched
 
 # Right items
 sketchybar --add item clock right                              \
            --set clock   update_freq=30                        \
                          icon=                                \
+                         background.color=0xff8c00ff           \
                          script="$PLUGIN_DIR/clock.sh"         \
-                                                               \
-           --add item wifi right                               \
-           --set wifi    script="$PLUGIN_DIR/wifi.sh"          \
-                         icon=直                               \
-           --subscribe wifi wifi_change                        \
                                                                \
            --add item volume right                             \
            --set volume  script="$PLUGIN_DIR/volume.sh"        \
+                         background.color=0xffff6600           \
            --subscribe volume volume_change                    \
                                                                \
            --add item battery right                            \
            --set battery script="$PLUGIN_DIR/battery.sh"       \
                          update_freq=120                       \
+                         background.color=0xff0066cc           \
            --subscribe battery system_woke power_source_change
 
 
