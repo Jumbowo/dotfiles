@@ -2,7 +2,13 @@ return {
   -- Bufferline
   {
     "akinsho/bufferline.nvim",
-      opts = { }
+      config = function()
+        require("bufferline").setup {
+          options = {
+
+          },
+        }
+      end
   },
 
   -- Lualine

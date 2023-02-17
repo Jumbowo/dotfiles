@@ -1,33 +1,34 @@
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
 ITEM_DIR="$HOME/.config/sketchybar/items"
+FONT_FACE="Hack Nerd Font"
 
 # Bar appearance
-sketchybar --bar height=40        \
-                 blur_radius=0    \
-                 position=top     \
-                 sticky=on       \
-                 padding_left=5  \
-                 padding_right=5 \
+sketchybar --bar height=40            \
+                 blur_radius=0        \
+                 position=top         \
+                 sticky=on            \
+                 padding_left=15      \
+                 padding_right=15     \
                  color=0x00ffffff
 
 # Changing defaults
-sketchybar --default icon.font="Hack Nerd Font:Bold:17.0"  \
+sketchybar --default icon.font="$FONT_FACE:Bold:17.0"      \
                      icon.color=0xffffffff                 \
-                     label.font="Hack Nerd Font:Bold:14.0" \
-                     label.color=0xffffffff                \
+                     label.font="$FONT_FACE:Bold:14.0"     \
+                     label.color=0xffcdd6f4                \
                      padding_left=5                        \
                      padding_right=5                       \
-                     y_offset=-1                            \
+                     y_offset=0                            \
                      label.padding_left=4                  \
-                     label.padding_right=12                 \
+                     label.padding_right=12                \
                      icon.padding_left=12                  \
                      icon.padding_right=6                  \
                      background.drawing=on                 \
                      background.height=24                  \
-                     background.color=0x99000000           \
-                     background.corner_radius=10           \
-                     background.padding_left=5             \
-                     background.padding_right=5            \
+                     background.color=0xff1e1e2e           \
+                     background.corner_radius=5            \
+                     background.padding_left=3             \
+                     background.padding_right=3            
 
 # Spaces
 # SPACE_ICONS=("1" "2" "3" "4" "5" "6" "7" "8" "9" "10")
@@ -50,23 +51,21 @@ sketchybar --add item front_app left                               \
            --set front_app       script="$PLUGIN_DIR/front_app.sh" \
                                  label.padding_left=12             \
                                  icon.drawing=off                  \
-                                 background.color=0x99000000       \
            --subscribe front_app front_app_switched
 
 # Right items
 sketchybar --add item clock right                              \
            --set clock   update_freq=30                        \
-                         icon=                                \
-                         background.color=0xff8c00ff           \
+                         icon=                                \
+                         icon.color=0xffed8796                 \
                          script="$PLUGIN_DIR/clock.sh"         \
                                                                \
            --add item battery right                            \
            --set battery script="$PLUGIN_DIR/battery.sh"       \
                          update_freq=120                       \
-                         background.color=0xff0066cc           \
+                         icon.color=0xffa6e3a1
            --subscribe battery system_woke power_source_change \
 
            source "$ITEM_DIR/spotify.sh"
-
 
 sketchybar --update
