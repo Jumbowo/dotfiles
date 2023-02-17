@@ -60,11 +60,6 @@ sketchybar --add item clock right                              \
                          background.color=0xff8c00ff           \
                          script="$PLUGIN_DIR/clock.sh"         \
                                                                \
-           --add item volume right                             \
-           --set volume  script="$PLUGIN_DIR/volume.sh"        \
-                         background.color=0xffff6600           \
-           --subscribe volume volume_change                    \
-                                                               \
            --add item battery right                            \
            --set battery script="$PLUGIN_DIR/battery.sh"       \
                          update_freq=120                       \

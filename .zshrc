@@ -21,6 +21,9 @@ zstyle ':omz:update' mode reminder  # Update reminder
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
+# Catppuccin color scheme
+source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+
 plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh

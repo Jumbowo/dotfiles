@@ -23,7 +23,13 @@ vim.opt.pumheight = 12
 
 vim.opt.fillchars:append { eob = " " }
 
-require("onedark").load()
+require("catppuccin").setup({
+  flavour = "mocha",
+  transparent_background = true,
+  no_italic = true,
+})
+
+vim.cmd.colorscheme "catppuccin"
 
 -- Menu transparency
 vim.cmd([[
