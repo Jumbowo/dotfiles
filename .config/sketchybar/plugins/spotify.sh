@@ -20,9 +20,9 @@ update ()
   args=()
   if [ $PLAYING -eq 0 ]; then
     if [ "$ARTIST" == "" ]; then
-      args+=(--set spotify.name label="$TRACK   $ALBUM" drawing=on)
+      args+=(--set spotify.name label="$TRACK - $ALBUM" drawing=on)
     else
-      args+=(--set spotify.name label="$TRACK   $ARTIST" drawing=on)
+      args+=(--set spotify.name label="$TRACK - $ARTIST" drawing=on)
     fi
   else
     args+=(--set spotify.name drawing=off \
