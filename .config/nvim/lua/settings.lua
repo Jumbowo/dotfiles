@@ -21,6 +21,8 @@ vim.opt.number = true
 
 vim.opt.pumheight = 12
 
+vim.opt.ttimeoutlen = 0
+
 vim.opt.fillchars:append { eob = " " }
 
 require("catppuccin").setup({

@@ -14,8 +14,9 @@ yabai -m config focus_follows_mouse           off
 yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
 yabai -m rule --add label="App Store" app="^App Store$" manage=off
 yabai -m rule --add label="System Settings" app="^System Settings$" title=".*" manage=off
-yabai -m rule --add label="About This Mac" app="^System Information$" title="About This Mac" manage=off
+yabai -m rule --add label="About This Mac" app="^System Information$" manage=off
 yabai -m rule --add label="Finder" app="^Finder$" manage=off 
+yabai -m rule --add label="Weather" app="^Weather$" manage=off 
 
 # Change focus on window close
 yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
