@@ -14,4 +14,9 @@ return {
       require("mini.comment").setup(opts)
     end,
   },
+
+  -- Rainbow pairs
+  {
+    "HiPhish/nvim-ts-rainbow2",
+  },
 }
