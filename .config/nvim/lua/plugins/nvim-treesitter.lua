@@ -11,6 +11,11 @@ return {
       disable = { },
     },
 
+    indent = {
+      enable = true,
+      disable = { "python" },
+    },
+
     -- Rainbow pairs
     rainbow = {
       enable = true,
