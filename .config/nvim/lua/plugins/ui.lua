@@ -18,7 +18,7 @@ return {
         require("lualine").setup {
           options = {
             globalstatus = true,
-          }
+          },
         }
       end
   },
