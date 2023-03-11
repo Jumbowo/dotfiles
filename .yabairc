@@ -1,3 +1,7 @@
+# Configure scripting addition
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
 # Tiling config
 yabai -m config layout                        bsp
 
@@ -21,3 +25,10 @@ yabai -m rule --add label="Weather" app="^Weather$" manage=off
 # Change focus on window close
 yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+
+## Settings below this line require SIP to be disabled
+# Mouse settings
+yabai -m config focus_follows_mouse autoraise
+
+# Disable window shadows
+yabai -m config window_shadow off
