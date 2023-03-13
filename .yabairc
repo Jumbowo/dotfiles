@@ -28,7 +28,7 @@ yabai -m signal --add event=application_terminated action="yabai -m query --wind
 
 ## Settings below this line require SIP to be disabled
 # Mouse settings
-yabai -m config focus_follows_mouse autoraise
+yabai -m config focus_follows_mouse off
 
 # Disable window shadows
 yabai -m config window_shadow off
