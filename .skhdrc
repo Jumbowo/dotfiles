@@ -23,6 +23,9 @@ lctrl + alt - l : yabai -m window --resize right:50:0; \
 # Window size balance
 lctrl + alt - e : yabai -m space --balance
 
+# Toggle float current window
+lctrl + alt - f : yabai -m window --toggle float
+
 ## Commands below this line require SIP off
 # Space movement
 alt - 1 : yabai -m space --focus 1
