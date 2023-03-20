@@ -39,5 +39,4 @@ yabai -m config normal_window_opacity 1.0
 yabai -m config active_window_opacity 1.0
 
 # Per-Window transparency
-yabai -m rule --add app="^Qt Creator$" opacity=0.85
 yabai -m rule --add app="^Spotify$" opacity=0.85
