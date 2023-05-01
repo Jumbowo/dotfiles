@@ -56,6 +56,14 @@ sketchybar --add item clock right                                  \
            --set battery script="$PLUGIN_DIR/battery.sh"           \
                          update_freq=120                           \
                          icon.color=0xffa6e3a1                     \
-           --subscribe battery system_woke power_source_change     
+           --subscribe battery system_woke power_source_change     \
+                                                                   \
+           --add item weather right                                \
+           --set weather script="$PLUGIN_DIR/weather.sh"           \
+                         update_freq=300                           \
+                         label.y_offset=2                          \
+                         icon.padding_left=0                       \
+                         icon.padding_right=0                      \
+                         label.padding_left=10                     \
 
 sketchybar --update
