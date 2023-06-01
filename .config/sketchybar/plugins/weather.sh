@@ -4,7 +4,7 @@
 # the item invoking this script:
 # https://felixkratz.github.io/SketchyBar/config/events#events-and-scripting
 
-LOCATION="Sydney"
+LOCATION="Waitara,Sydney"
 TEMP=`curl -s "https://wttr.in/${LOCATION}?format=1" |sed 's|  *| |g'`
 echo $TEMP
 

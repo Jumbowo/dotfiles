@@ -21,6 +21,7 @@ yabai -m rule --add label="System Settings" app="^System Settings$" title=".*" m
 yabai -m rule --add label="About This Mac" app="^System Information$" manage=off
 yabai -m rule --add label="Finder" app="^Finder$" manage=off 
 yabai -m rule --add label="Weather" app="^Weather$" manage=off 
+yabai -m rule --add label="Digital Colour Meter" app="^Digital Colour Meter$" manage=off 
 
 # Change focus on window close
 yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
@@ -39,4 +40,4 @@ yabai -m config normal_window_opacity 1.0
 yabai -m config active_window_opacity 1.0
 
 # Per-Window transparency
-yabai -m rule --add app="^Spotify$" opacity=0.85
+# yabai -m rule --add app="^Spotify$" opacity=0.85
