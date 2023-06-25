@@ -48,7 +48,7 @@ sketchybar --add item front_app left                               \
 # Right items
 sketchybar --add item clock right                                  \
            --set clock   update_freq=30                            \
-                         icon=                                    \
+                         icon=󱛡                                    \
                          icon.color=0xffed8796                     \
                          script="$PLUGIN_DIR/clock.sh"             \
                                                                    \

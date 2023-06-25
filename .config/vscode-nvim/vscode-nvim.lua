@@ -13,4 +13,3 @@ end
 
 -- VSCode Actions
 map ("n", "<leader>f", notify "workbench.action.quickOpen", snr)
-
