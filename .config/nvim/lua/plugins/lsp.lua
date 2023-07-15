@@ -32,6 +32,18 @@ return {
       lsp.nvim_workspace()
       lsp.setup()
 
+      -- Nvim cmp
+      local cmp = require('cmp')
+
+      cmp.setup({
+        formatting = {
+          format = function(entry, vim_item)
+            vim_item.abbr = string.sub(vim_item.abbr, 1, 20)
+            return vim_item
+          end
+        }
+      })
+
       -- Override defualt vim.diagnostic.config
       vim.diagnostic.config({
         virtual_text = true,
