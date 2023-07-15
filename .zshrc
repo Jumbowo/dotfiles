@@ -38,3 +38,12 @@ alias t="tmux"
 
 # Dotfiles gihtub management
 alias cfg='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# SMLNJ
+export PATH="$PATH:/usr/local/smlnj/bin/"
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
