@@ -35,6 +35,7 @@ source $ZSH/oh-my-zsh.sh
 # General aliases
 alias nv="nvim"
 alias t="tmux"
+alias py="python3"
 
 # Dotfiles gihtub management
 alias cfg='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

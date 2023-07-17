@@ -1,5 +1,7 @@
 return {
   -- Catppuccin
-  "catppuccin/nvim",
-  name = catppuccin,
+  {
+    "catppuccin/nvim",
+    name = catppuccin,
+  },
 }
