@@ -4,7 +4,7 @@
 * Karabiner-Elements - remap caps to ctrl + esc 
 * LinearMouse - disable mouse acceleration
 * Neovim
-* skhd - hoykey layer
+* skhd - hotkey layer
 * SketchyBar - fancy status bar
 * VSCode neovim
 * yabai - window management
