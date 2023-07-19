@@ -35,13 +35,25 @@ return {
       -- Nvim cmp
       local cmp = require('cmp')
 
+      local ELLIPSIS_CHAR = '…'
+      local MAX_LABEL_WIDTH = 25
+      local MIN_LABEL_WIDTH = 25
+
+      -- Set min and max menu width in cmp
       cmp.setup({
         formatting = {
           format = function(entry, vim_item)
-            vim_item.abbr = string.sub(vim_item.abbr, 1, 20)
+            local label = vim_item.abbr
+            local truncated_label = vim.fn.strcharpart(label, 0, MAX_LABEL_WIDTH)
+            if truncated_label ~= label then
+              vim_item.abbr = truncated_label .. ELLIPSIS_CHAR
+            elseif string.len(label) < MIN_LABEL_WIDTH then
+              local padding = string.rep(' ', MIN_LABEL_WIDTH - string.len(label))
+              vim_item.abbr = label .. padding
+            end
             return vim_item
-          end
-        }
+          end,
+        },
       })
 
       -- Override defualt vim.diagnostic.config
