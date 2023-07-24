@@ -33,7 +33,6 @@ require("catppuccin").setup({
 
 vim.cmd.colorscheme "catppuccin"
 
--- Menu transparency
 vim.cmd([[
   highlight! link NormalFloat Normal
   highlight! link PMenu Normal
