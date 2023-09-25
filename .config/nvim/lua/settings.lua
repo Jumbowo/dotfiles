@@ -29,6 +29,41 @@ require("catppuccin").setup({
   flavour = "mocha",
   transparent_background = true,
   no_italic = true,
+  color_overrides = {
+    mocha = {
+      base = "#000000",
+      mantle = "#000000",
+      crust = "#000000",
+      text = "#EEFFFF",
+      peach = "#F78C6C",
+      green = "#C3E88D",
+      blue = "#82AAFF",
+      maroon = "#FF5370",
+      sky = "#89DDFF",
+      mauve = "#C792EA",
+      yellow = "#FFCB6B",
+    },
+  },
+  custom_highlights = function(colors)
+    return {
+      ["@function.builtin"] = { fg = colors.blue },
+      ["@keyword.function"] = { fg = colors.sky },
+      ["@keyword.operator"] = { fg = colors.mauve },
+      Operator = { fg = colors.mauve },
+      ["@keyword.return"] = { fg = colors.sky },
+      ["@type.builtin"] = { fg = colors.yellow },
+      ["@type.qualifier"] = { fg = colors.mauve },
+      ["@variable.builtin"] = { fg = colors.text },
+      Include = { fg = colors.sky },
+      Conditional = { fg = colors.sky },
+      Repeat = { fg = colors.sky },
+      ["@namespace"] = { fg = colors.yellow },
+      ["@field"] = { fg = colors.text },
+      ["@property"] = { fg = colors.text },
+      Delimiter = { fg = colors.sky },
+      ["@variable"] = { fg = colors.text },
+    }
+  end
 })
 
 vim.cmd.colorscheme "catppuccin"
