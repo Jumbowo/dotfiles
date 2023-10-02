@@ -62,6 +62,9 @@ require("catppuccin").setup({
       ["@property"] = { fg = colors.text },
       Delimiter = { fg = colors.sky },
       ["@variable"] = { fg = colors.text },
+      Macro = { fg = colors.blue },
+      PreProc = { fg = colors.sky },
+      ["@string.escape"] = { fg = colors.sky },
     }
   end
 })
