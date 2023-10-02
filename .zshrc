@@ -37,6 +37,10 @@ alias nv="nvim"
 alias t="tmux"
 alias py="python3"
 
+# GPG setup
+GPG_TTY=$(tty)
+export GPG_TTY
+
 # Dotfiles gihtub management
 alias cfg='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
