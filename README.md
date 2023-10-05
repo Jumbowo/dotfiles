@@ -1,11 +1,7 @@
-## Jumbo's Dotfiles
+## Jumbo's things
 
-### Config for:
-* Karabiner-Elements - remap caps to ctrl + esc 
-* LinearMouse - disable mouse acceleration
+* Karabiner-Elements
+* LinearMouse
 * Neovim
-* skhd - hotkey layer
-* SketchyBar - fancy status bar
-* VSCode neovim
-* yabai - window management
-* and more...
+* yabai + skhd
+* SketchyBar
