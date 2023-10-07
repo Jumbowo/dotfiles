@@ -28,6 +28,7 @@ map("n", "]e", "<cmd>Lspsaga diagnostic_jump_next<CR>", snr)
 -- Telescope
 map("n", "<leader>f", "<cmd>Telescope find_files<CR>", snr)
 map("n", "<leader>r", "<cmd>Telescope live_grep<CR>", snr)
+map("n", "<leader>b", "<cmd>Telescope buffers<CR>", snr)
 
 -- Bufferline
 map("n", "<TAB>", ":BufferLineCycleNext<CR>", snr)

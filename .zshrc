@@ -37,6 +37,12 @@ alias nv="nvim"
 alias t="tmux"
 alias py="python3"
 
+# Disable cancer
+export HOMEBREW_NO_ANALYTICS=1
+
+# Pref brew curl
+export PATH="$(brew --prefix)/opt/curl/bin:$PATH"
+
 # GPG setup
 GPG_TTY=$(tty)
 export GPG_TTY
