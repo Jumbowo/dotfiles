@@ -29,6 +29,13 @@ return {
         suggest_lsp_servers = false,
       })
 
+      require('lspconfig').clangd.setup({
+        cmd = {
+          "clangd",
+          "--header-insertion=never"
+        }
+      })
+
       lsp.nvim_workspace()
       lsp.setup()
 
