@@ -43,3 +43,28 @@ map("n", "<leader>7", "<cmd>BufferLineGoToBuffer 7<CR>", snr)
 map("n", "<leader>8", "<cmd>BufferLineGoToBuffer 8<CR>", snr)
 map("n", "<leader>9", "<cmd>BufferLineGoToBuffer 9<CR>", snr)
 map("n", "<leader>$", "<cmd>BufferLineGoToBuffer -1<CR>", snr)
+
+-- Remap lowercase marks to uppercase
+local alphabet = "abcdefghijklmnopqrstuvwxyz"
+for i = 1, 26, 1 do
+    map(
+        "n",
+        string.format("m%s", string.sub(alphabet, i, i)),
+        string.format("m%s", string.upper(string.sub(alphabet, i, i))),
+        snr
+    )
+    map(
+        "n",
+        string.format("'%s", string.sub(alphabet, i, i)),
+        string.format("'%s", string.upper(string.sub(alphabet, i, i))),
+        snr
+    )
+    map(
+        "n",
+        string.format("`%s", string.sub(alphabet, i, i)),
+        string.format("`%s", string.upper(string.sub(alphabet, i, i))),
+        snr
+    )
+end
+
+
