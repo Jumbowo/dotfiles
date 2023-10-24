@@ -30,20 +30,6 @@ map("n", "<leader>f", "<cmd>Telescope find_files<CR>", snr)
 map("n", "<leader>r", "<cmd>Telescope live_grep<CR>", snr)
 map("n", "<leader>b", "<cmd>Telescope buffers<CR>", snr)
 
--- Bufferline
-map("n", "<TAB>", ":BufferLineCycleNext<CR>", snr)
-map("n", "<S-TAB>", ":BufferLineCyclePrev<CR>", snr)
-map("n", "<leader>1", "<cmd>BufferLineGoToBuffer 1<CR>", snr)
-map("n", "<leader>2", "<cmd>BufferLineGoToBuffer 2<CR>", snr)
-map("n", "<leader>3", "<cmd>BufferLineGoToBuffer 3<CR>", snr)
-map("n", "<leader>4", "<cmd>BufferLineGoToBuffer 4<CR>", snr)
-map("n", "<leader>5", "<cmd>BufferLineGoToBuffer 5<CR>", snr)
-map("n", "<leader>6", "<cmd>BufferLineGoToBuffer 6<CR>", snr)
-map("n", "<leader>7", "<cmd>BufferLineGoToBuffer 7<CR>", snr)
-map("n", "<leader>8", "<cmd>BufferLineGoToBuffer 8<CR>", snr)
-map("n", "<leader>9", "<cmd>BufferLineGoToBuffer 9<CR>", snr)
-map("n", "<leader>$", "<cmd>BufferLineGoToBuffer -1<CR>", snr)
-
 -- Remap lowercase marks to uppercase
 local alphabet = "abcdefghijklmnopqrstuvwxyz"
 for i = 1, 26, 1 do
