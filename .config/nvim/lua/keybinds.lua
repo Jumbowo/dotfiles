@@ -22,8 +22,9 @@ map("n", "gh", "<cmd>Lspsaga lsp_finder<CR>", snr)
 map("n", "gt", "<cmd>Lspsaga peek_type_definition<CR>", snr)
 map("n", "gr", "<cmd>Lspsaga rename<CR>", snr)
 map("n", "gR", "<cmd>Lspsaga rename ++project<CR>", snr)
-map("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>", snr)
-map("n", "]e", "<cmd>Lspsaga diagnostic_jump_next<CR>", snr)
+map("n", "<leader>s", "<cmd>Lspsaga diagnostic_jump_prev<CR>", snr)
+map("n", "<leader>d", "<cmd>Lspsaga diagnostic_jump_next<CR>", snr)
+map("n", "<leader>o", "<cmd>Lspsaga outline<CR>", snr)
 
 -- Telescope
 map("n", "<leader>f", "<cmd>Telescope find_files<CR>", snr)
