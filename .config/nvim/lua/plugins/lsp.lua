@@ -21,6 +21,7 @@ return {
             'L3MON4D3/LuaSnip',
             'rafamadriz/friendly-snippets',
         },
+
         config = function()
             local lsp = require("lsp-zero").preset({
                 name = "minimal",
@@ -43,8 +44,8 @@ return {
             local cmp = require('cmp')
 
             local ELLIPSIS_CHAR = '…'
-            local MAX_LABEL_WIDTH = 25
-            local MIN_LABEL_WIDTH = 25
+            local MAX_LABEL_WIDTH = 30
+            local MIN_LABEL_WIDTH = 30
 
             -- Set min and max menu width in cmp
             cmp.setup({

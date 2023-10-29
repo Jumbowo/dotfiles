@@ -21,5 +21,11 @@ return {
         cmd = "Telescope",
         version = false,
         opts = { }
+    },
+
+    -- Gitsigns
+    {
+        "lewis6991/gitsigns.nvim",
+        opts = { }
     }
 }
