@@ -13,6 +13,7 @@ config.font_size = 15
 -- Disable ligatures
 config.harfbuzz_features = {"calt = 0", "clig = 0", "liga = 0"}
 
+config.enable_tab_bar = false
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = false
 config.tab_bar_at_bottom = true
@@ -22,7 +23,7 @@ config.window_background_opacity = 0.8
 config.window_padding = {
     left = "0.5cell",
     right = 0,
-    top = "0.2cell",
+    top = "0.3cell",
     bottom = 0,
 }
 
@@ -55,7 +56,12 @@ config.keys = {
         key = "p",
         mods = "CMD",
         action = wezterm.action.ActivateCommandPalette,
-    }
+    },
+    {
+        key = "m",
+        mods = "CMD",
+        action = wezterm.action.DisableDefaultAssignment,
+    },
 }
 
 return config
