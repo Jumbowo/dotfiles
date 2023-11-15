@@ -14,6 +14,8 @@ return {
             require("mini.comment").setup(opts)
         end,
     },
+
+    -- Indent blankline
     {
         "lukas-reineke/indent-blankline.nvim",
         main = "ibl",

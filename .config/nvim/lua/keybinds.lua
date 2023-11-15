@@ -31,6 +31,8 @@ map("n", "<leader>f", "<cmd>Telescope find_files<CR>", snr)
 map("n", "<leader>r", "<cmd>Telescope live_grep<CR>", snr)
 map("n", "<leader>b", "<cmd>Telescope buffers<CR>", snr)
 
+map("n", "<leader>i", "<cmd>Inspect<CR>", snr)
+
 -- Remap lowercase marks to uppercase
 local alphabet = "abcdefghijklmnopqrstuvwxyz"
 for i = 1, 26, 1 do
