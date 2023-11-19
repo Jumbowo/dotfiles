@@ -62,7 +62,7 @@ return {
 
             cmp.setup({
                 mapping = {
-                    ["<CR>"] = cmp.mapping.confirm({ select = false }),
+                    ["<CR>"] = cmp.mapping.confirm({ select = true }),
                 },
                 -- Set min and max menu width in cmp
                 formatting = {

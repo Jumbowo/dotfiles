@@ -27,5 +27,19 @@ return {
     {
         "lewis6991/gitsigns.nvim",
         opts = { }
+    },
+
+    -- Aerial
+    {
+        'stevearc/aerial.nvim',
+        opts = {
+            layout = {
+                max_width = 0.3,
+                min_width = 0.2,
+                default_direction = "right",
+                placement = "edge",
+            },
+            attach_mode = "global",
+        },
     }
 }
