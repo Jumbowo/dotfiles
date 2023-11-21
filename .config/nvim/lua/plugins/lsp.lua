@@ -43,12 +43,12 @@ return {
 
             lspconfig.emmet_language_server.setup({})
 
-            lspconfig.clangd.setup({
-                cmd = {
-                    "clangd",
-                    "--header-insertion=never"
-                }
-            })
+            -- lspconfig.clangd.setup({
+            --     cmd = {
+            --         "clangd",
+            --         "--header-insertion=never"
+            --     }
+            -- })
 
             lsp.nvim_workspace()
             lsp.setup()
