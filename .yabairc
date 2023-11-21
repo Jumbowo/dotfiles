@@ -5,11 +5,11 @@ sudo yabai --load-sa
 # Tiling config
 yabai -m config layout                        bsp
 
-yabai -m config top_padding                   "10"
-yabai -m config bottom_padding                "10"
-yabai -m config left_padding                  "10"
-yabai -m config right_padding                 "10"
-yabai -m config window_gap                    "10"
+yabai -m config top_padding                   "5"
+yabai -m config bottom_padding                "0"
+yabai -m config left_padding                  "0"
+yabai -m config right_padding                 "0"
+yabai -m config window_gap                    "0"
 
 yabai -m config mouse_follows_focus           off
 yabai -m config focus_follows_mouse           off
@@ -24,6 +24,7 @@ yabai -m rule --add label="Weather" app="^Weather$" manage=off
 yabai -m rule --add label="Digital Colour Meter" app="^Digital Colour Meter$" manage=off 
 
 yabai -m rule --add label="psim" app="^psim$" manage=off 
+yabai -m rule --add label="main" app="^main$" manage=off 
 
 # Change focus on window close
 yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
@@ -37,9 +38,9 @@ yabai -m config focus_follows_mouse off
 yabai -m config window_shadow off
 
 # Window transparency
-yabai -m config window_opacity on
-yabai -m config normal_window_opacity 1.0
-yabai -m config active_window_opacity 1.0
+# yabai -m config window_opacity off
+# yabai -m config normal_window_opacity 1.0
+# yabai -m config active_window_opacity 1.0
 
 # Per-Window transparency
 # yabai -m rule --add app="^Spotify$" opacity=0.85

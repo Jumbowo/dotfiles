@@ -9,7 +9,7 @@ sketchybar --bar height=40            \
                  sticky=on            \
                  padding_left=8       \
                  padding_right=8      \
-                 color=0x00000000
+                 color=0xCC000000
 
 # Changing defaults
 sketchybar --default icon.font="$FONT_FACE:Bold:17.0"      \
@@ -18,14 +18,14 @@ sketchybar --default icon.font="$FONT_FACE:Bold:17.0"      \
                      label.color=0xFFEEFFFF                \
                      padding_left=5                        \
                      padding_right=5                       \
-                     y_offset=-1                           \
+                     y_offset=1                            \
                      label.padding_left=4                  \
                      label.padding_right=12                \
                      icon.padding_left=12                  \
                      icon.padding_right=6                  \
                      background.drawing=on                 \
                      background.height=29                  \
-                     background.color=0xff1a1a1a           \
+                     background.color=0x001a1a1a           \
                      background.corner_radius=8            \
                      background.padding_left=3             \
                      background.padding_right=3            
