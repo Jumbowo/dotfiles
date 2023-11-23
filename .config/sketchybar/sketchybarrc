@@ -3,37 +3,38 @@ ITEM_DIR="$HOME/.config/sketchybar/items"
 FONT_FACE="Hack Nerd Font"
 
 # Bar appearance
-sketchybar --bar height=37            \
+sketchybar --bar height=35            \
+                 margin=0             \
                  blur_radius=0        \
                  position=top         \
                  sticky=on            \
-                 padding_left=8       \
-                 padding_right=8      \
-                 color=0xCC000000
+                 padding_left=3       \
+                 padding_right=3      \
+                 color=0x00000000
 
 # Changing defaults
 sketchybar --default icon.font="$FONT_FACE:Bold:17.0"      \
                      icon.color=0xffffffff                 \
                      label.font="$FONT_FACE:Bold:14.0"     \
                      label.color=0xFFEEFFFF                \
-                     padding_left=5                        \
-                     padding_right=5                       \
-                     y_offset=1                            \
+                     padding_left=3                        \
+                     padding_right=3                       \
+                     y_offset=0                            \
                      label.padding_left=4                  \
-                     label.padding_right=12                \
-                     icon.padding_left=12                  \
+                     label.padding_right=10                \
+                     icon.padding_left=10                  \
                      icon.padding_right=6                  \
                      background.drawing=on                 \
-                     background.height=29                  \
-                     background.color=0x001a1a1a           \
-                     background.corner_radius=8            \
+                     background.height=28                  \
+                     background.color=0xCC000000           \
+                     background.corner_radius=15            \
                      background.padding_left=3             \
                      background.padding_right=3            
 
 # Left items
 sketchybar --add item space left                                   \
            --set space           script="$PLUGIN_DIR/space.sh"     \
-                                 label.padding_left=12             \
+                                 label.padding_left=10             \
                                  icon.drawing=off                  \
            --subscribe space space_change
 
@@ -57,13 +58,5 @@ sketchybar --add item clock right                                  \
                          update_freq=120                           \
                          icon.color=0xffa6e3a1                     \
            --subscribe battery system_woke power_source_change     \
-                                                                   \
-           # --add item weather right                                \
-           # --set weather script="$PLUGIN_DIR/weather.sh"           \
-           #               update_freq=300                           \
-           #               label.y_offset=2                          \
-           #               icon.padding_left=0                       \
-           #               icon.padding_right=0                      \
-           #               label.padding_left=10                     \
 
 sketchybar --update

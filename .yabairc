@@ -5,11 +5,11 @@ sudo yabai --load-sa
 # Tiling config
 yabai -m config layout                        bsp
 
-yabai -m config top_padding                   "5"
-yabai -m config bottom_padding                "0"
-yabai -m config left_padding                  "0"
-yabai -m config right_padding                 "0"
-yabai -m config window_gap                    "0"
+yabai -m config top_padding                   "4"
+yabai -m config bottom_padding                "4"
+yabai -m config left_padding                  "4"
+yabai -m config right_padding                 "4"
+yabai -m config window_gap                    "4"
 
 yabai -m config mouse_follows_focus           off
 yabai -m config focus_follows_mouse           off
@@ -23,7 +23,6 @@ yabai -m rule --add label="Finder" app="^Finder$" manage=off
 yabai -m rule --add label="Weather" app="^Weather$" manage=off 
 yabai -m rule --add label="Digital Colour Meter" app="^Digital Colour Meter$" manage=off 
 
-yabai -m rule --add label="psim" app="^psim$" manage=off 
 yabai -m rule --add label="main" app="^main$" manage=off 
 
 # Change focus on window close
