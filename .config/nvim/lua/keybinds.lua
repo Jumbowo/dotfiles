@@ -15,6 +15,7 @@ map("v", ">", ">gv", snr)
 
 -- LSP
 map("n", "K", "<cmd>Lspsaga hover_doc<CR>", snr)
+map("v", "K", "<cmd>Lspsaga hover_doc<CR>", snr)
 map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", snr)
 map("n", "gD", "<cmd>Lspsaga peek_definition<CR>", snr)
 map("n", "ga", "<cmd>Lspsaga code_action<CR>", snr)
@@ -36,24 +37,24 @@ map("n", "<leader>i", "<cmd>Inspect<CR>", snr)
 -- Remap lowercase marks to uppercase
 local alphabet = "abcdefghijklmnopqrstuvwxyz"
 for i = 1, 26, 1 do
-    map(
-        "n",
-        string.format("m%s", string.sub(alphabet, i, i)),
-        string.format("m%s", string.upper(string.sub(alphabet, i, i))),
-        snr
-    )
-    map(
-        "n",
-        string.format("'%s", string.sub(alphabet, i, i)),
-        string.format("'%s", string.upper(string.sub(alphabet, i, i))),
-        snr
-    )
-    map(
-        "n",
-        string.format("`%s", string.sub(alphabet, i, i)),
-        string.format("`%s", string.upper(string.sub(alphabet, i, i))),
-        snr
-    )
+  map(
+    "n",
+    string.format("m%s", string.sub(alphabet, i, i)),
+    string.format("m%s", string.upper(string.sub(alphabet, i, i))),
+    snr
+  )
+  map(
+    "n",
+    string.format("'%s", string.sub(alphabet, i, i)),
+    string.format("'%s", string.upper(string.sub(alphabet, i, i))),
+    snr
+  )
+  map(
+    "n",
+    string.format("`%s", string.sub(alphabet, i, i)),
+    string.format("`%s", string.upper(string.sub(alphabet, i, i))),
+    snr
+  )
 end
 
 
