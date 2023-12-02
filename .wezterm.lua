@@ -7,11 +7,14 @@ if wezterm.config_builder then
 end
 
 ----- Begin custom config -----
-config.font = wezterm.font "JetBrainsMono Nerd Font"
+config.font = wezterm.font("MonaspiceNe Nerd Font Mono", { weight = "Light" })
 config.font_size = 15
+config.line_height = 1.1
 
 -- Disable ligatures
-config.harfbuzz_features = {"calt = 0", "clig = 0", "liga = 0"}
+-- config.harfbuzz_features = {"calt = 0", "clig = 0", "liga = 0"}
+
+TIME_limit = a
 
 config.enable_tab_bar = false
 config.use_fancy_tab_bar = false
