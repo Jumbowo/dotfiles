@@ -78,6 +78,14 @@ return {
             return vim_item
           end,
         },
+        sources = {
+          {
+            name = "nvim_lsp",
+            keyword_length = 5,
+            group_index = 1,
+            max_item_count = 30
+          },
+        },
       })
 
       -- Override defualt vim.diagnostic.config

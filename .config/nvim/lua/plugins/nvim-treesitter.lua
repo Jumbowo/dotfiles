@@ -14,10 +14,10 @@ return {
       enable = true,
       -- disable = { "python", "rust" },
     },
-    -- Rainbow pairs
     rainbow = {
       enable = true,
-    },
+      disable = { "jsx", "tsx" },
+    }
   },
   config = function(_, opts)
     require("nvim-treesitter.configs").setup(opts)
