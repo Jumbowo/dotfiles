@@ -14,12 +14,12 @@ return {
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
-      "saadparwaiz1/cmp_luasnip",
       "hrsh7th/cmp-nvim-lua",
 
       -- Snippets
       "L3MON4D3/LuaSnip",
       "rafamadriz/friendly-snippets",
+      "saadparwaiz1/cmp_luasnip",
     },
 
     config = function()
@@ -62,7 +62,7 @@ return {
 
       cmp.setup({
         mapping = {
-          ["<CR>"] = cmp.mapping.confirm({ select = true }),
+          ["<CR>"] = cmp.mapping.confirm({ select = false }),
         },
         -- Set min and max menu width in cmp
         formatting = {
@@ -77,14 +77,6 @@ return {
             end
             return vim_item
           end,
-        },
-        sources = {
-          {
-            name = "nvim_lsp",
-            keyword_length = 5,
-            group_index = 1,
-            max_item_count = 30
-          },
         },
       })
 
