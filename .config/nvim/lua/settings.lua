@@ -12,6 +12,8 @@ vim.opt.smarttab = true
 vim.opt.cindent = true
 vim.opt.scrolloff = 4
 
+vim.opt.guicursor = "n-v-c-i:block"
+
 vim.opt.signcolumn = 'yes'
 
 vim.opt.termguicolors = true
