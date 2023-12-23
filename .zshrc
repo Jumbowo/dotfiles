@@ -9,7 +9,7 @@ zstyle ':omz:update' mode reminder  # Update reminder
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Catppuccin color scheme
+# Catppuccin
 source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 plugins=(git zsh-syntax-highlighting)
@@ -35,13 +35,10 @@ source $ZSH/oh-my-zsh.sh
 # General aliases
 alias nv="nvim"
 alias t="tmux"
-alias py="python3"
+alias py="python"
 
 # Disable cancer
 export HOMEBREW_NO_ANALYTICS=1
-
-# Pref brew curl
-export PATH="$(brew --prefix)/opt/curl/bin:$PATH"
 
 # GPG setup
 GPG_TTY=$(tty)
@@ -50,12 +47,13 @@ export GPG_TTY
 # Dotfiles gihtub management
 alias cfg='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-# SMLNJ
-export PATH="$PATH:/usr/local/smlnj/bin/"
-
 # Pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+# Paths
+export PATH="$PATH:/usr/local/smlnj/bin/"
+
+export PATH="$(brew --prefix)/opt/curl/bin:$PATH"
+export PATH="$(brew --prefix)/opt/ruby/bin:$PATH"
