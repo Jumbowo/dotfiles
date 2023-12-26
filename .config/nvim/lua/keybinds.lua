@@ -36,6 +36,7 @@ map("n", "<leader>o", "<cmd>AerialToggle!<CR>", snr)
 
 -- Other
 map("n", "<leader>i", "<cmd>Inspect<CR>", snr)
+map("n", "<leader>u", "<cmd>TSBufToggle highlight<CR>", snr)
 
 -- Remap lowercase marks to uppercase
 local alphabet = "abcdefghijklmnopqrstuvwxyz"
