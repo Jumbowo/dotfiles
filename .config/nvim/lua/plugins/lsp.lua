@@ -63,6 +63,8 @@ return {
       cmp.setup({
         mapping = {
           ["<CR>"] = cmp.mapping.confirm({ select = false }),
+          ['<Tab>'] = vim.NIL,
+          ['<S-Tab>'] = vim.NIL,
         },
         -- Set min and max menu width in cmp
         formatting = {
