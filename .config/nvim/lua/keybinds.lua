@@ -34,6 +34,9 @@ map("n", "<leader>b", "<cmd>Telescope buffers<CR>", snr)
 -- Aerial
 map("n", "<leader>o", "<cmd>AerialToggle!<CR>", snr)
 
+-- Nvim Tree
+map("n", "<leader>t", "<cmd>NvimTreeToggle<CR>", snr)
+
 -- Other
 map("n", "<leader>i", "<cmd>Inspect<CR>", snr)
 map("n", "<leader>u", "<cmd>TSBufToggle highlight<CR>", snr)
