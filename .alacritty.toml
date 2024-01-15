@@ -13,6 +13,9 @@ size = 15
 [mouse]
 hide_when_typing = true
 
+# [debug]
+# persistent_logging = true
+
 [colors.primary]
 foreground = "#FFFFFF"
 background = "#000000"
