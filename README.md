@@ -1,7 +1,3 @@
 ## Jumbo's things
 
-* Karabiner-Elements
-* LinearMouse
-* Neovim
-* yabai + skhd
-* SketchyBar
+![Dotfile showcase image.](./example.png?raw=true)
