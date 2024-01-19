@@ -49,6 +49,7 @@ return {
     opts = {
       view = {
         width = 35,
+        signcolumn = "no",
       }
     }
   }
