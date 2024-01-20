@@ -11,7 +11,7 @@ config.font_size = 15
 config.line_height = 1.0
 
 -- Disable ligatures
-config.harfbuzz_features = { "calt = 0", "clig = 0", "liga = 0" }
+config.harfbuzz_features = { "calt = 1", "clig = 0", "liga = 0" }
 
 config.enable_tab_bar = false
 config.use_fancy_tab_bar = false
