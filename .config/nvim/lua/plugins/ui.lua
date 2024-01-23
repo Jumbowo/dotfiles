@@ -52,6 +52,5 @@ return {
         signcolumn = "no",
       }
     }
-  }
-
+  },
 }
