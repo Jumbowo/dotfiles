@@ -1,41 +1,29 @@
-export ZSH="$HOME/.oh-my-zsh"
+setopt auto_menu # show completion menu on successive tabs
+setopt always_to_end
+setopt auto_cd
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt pushdminus
 
-ZSH_THEME="robbyrussell"
+unsetopt menu_complete # do not autoselect the first completion entry
 
-zstyle ':omz:update' mode reminder  # Update reminder
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Catppuccin
-source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
-
-plugins=(git zsh-syntax-highlighting)
-
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# Dotfile management
+alias cfg='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # General aliases
 alias nv="nvim"
 alias t="tmux"
 alias py="python"
+
+alias ls="ls --color"
+alias l="ls -lah"
+alias ll="ls -lh"
+alias la="ls -lAh"
+alias lsa="ls -lah"
+
+# Prompt name color
+autoload -U colors && colors
+PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
 
 # Disable cancer
 export HOMEBREW_NO_ANALYTICS=1
@@ -44,16 +32,15 @@ export HOMEBREW_NO_ANALYTICS=1
 GPG_TTY=$(tty)
 export GPG_TTY
 
-# Dotfiles gihtub management
-alias cfg='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
 # Pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # Paths
-export PATH="$PATH:/usr/local/smlnj/bin/"
-
 export PATH="$(brew --prefix)/opt/curl/bin:$PATH"
 export PATH="$(brew --prefix)/opt/ruby/bin:$PATH"
+
+# Fish-like syntax highlight / autosuggestions
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
