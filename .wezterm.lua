@@ -56,25 +56,13 @@ config.debug_key_events = false
 local act = wezterm.action
 
 config.keys = {
-  {
-    key = "p",
-    mods = "CMD",
-    action = wezterm.action.ActivateCommandPalette,
-  },
-  {
-    key = "m",
-    mods = "CMD",
-    action = wezterm.action.DisableDefaultAssignment,
-  },
+  { key = "p", mods = "CMD", action = wezterm.action.ActivateCommandPalette },
 
-  -- Tabs suck
-  {
-    key = "t",
-    mods = "CMD",
-    action = wezterm.action.DisableDefaultAssignment,
-  },
+  { key = "m", mods = "CMD", action = wezterm.action.DisableDefaultAssignment },
+  { key = "w", mods = "CMD", action = wezterm.action.DisableDefaultAssignment },
+  { key = "t", mods = "CMD", action = wezterm.action.DisableDefaultAssignment },
+  { key = "q", mods = "CMD", action = wezterm.action.DisableDefaultAssignment },
 
-  -- Nice tmux binds
   { key = "1", mods = "CMD", action = act.Multiple { act.SendKey { key = "a", mods = "CTRL", }, act.SendKey { key = "1" }}},
   { key = "2", mods = "CMD", action = act.Multiple { act.SendKey { key = "a", mods = "CTRL", }, act.SendKey { key = "2" }}},
   { key = "3", mods = "CMD", action = act.Multiple { act.SendKey { key = "a", mods = "CTRL", }, act.SendKey { key = "3" }}},
