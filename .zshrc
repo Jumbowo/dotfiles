@@ -1,11 +1,12 @@
-setopt auto_menu # show completion menu on successive tabs
+setopt auto_menu # Show completion menu on successive tabs
 setopt always_to_end
 setopt auto_cd
 setopt auto_pushd
 setopt pushd_ignore_dups
 setopt pushdminus
+setopt nocorrect nocorrectall # Disable autocorrect
 
-unsetopt menu_complete # do not autoselect the first completion entry
+unsetopt menu_complete # Do not autoselect the first completion entry
 
 # Dotfile management
 alias cfg='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
