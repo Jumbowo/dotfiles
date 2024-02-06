@@ -6,6 +6,10 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
+config.check_for_updates = false
+
+config.front_end = "WebGpu"
+
 config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 15
 config.line_height = 1.0
