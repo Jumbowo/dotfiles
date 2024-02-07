@@ -5,6 +5,7 @@ setopt auto_pushd
 setopt pushd_ignore_dups
 setopt pushdminus
 setopt nocorrect nocorrectall # Disable autocorrect
+setopt ignore_eof # Prevent zsh from exiting on ctrl-d
 
 unsetopt menu_complete # Do not autoselect the first completion entry
 
