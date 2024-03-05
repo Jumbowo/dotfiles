@@ -52,6 +52,7 @@ require("catppuccin").setup({
   },
   custom_highlights = function(colors)
     return {
+      -- General
       ["@function.builtin"] = { fg = colors.blue },
       ["@keyword.function"] = { fg = colors.sky },
       ["@keyword.operator"] = { fg = colors.mauve },
@@ -72,6 +73,11 @@ require("catppuccin").setup({
       PreProc = { fg = colors.sky },
       ["@string.escape"] = { fg = colors.sky },
       NonText = { fg = "#2e2e2e" },
+      -- TsServer
+      ["@tag.tsx"] = { fg = "#F07178" },
+      ["@keyword.tsx"] = { fg = colors.sky },
+      ["@keyword.function.tsx"] = { fg = colors.mauve },
+      ["@type.builtin.tsx"] = { fg = "#B2CCD6" },
     }
   end
 })
