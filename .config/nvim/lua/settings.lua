@@ -78,6 +78,8 @@ require("catppuccin").setup({
       ["@keyword.tsx"] = { fg = colors.sky },
       ["@keyword.function.tsx"] = { fg = colors.mauve },
       ["@type.builtin.tsx"] = { fg = "#B2CCD6" },
+      ["@type.builtin.typescript"] = { fg = "#B2CCD6" },
+      ["@lsp.type.interface.typescript"] = { fg = colors.yellow },
     }
   end
 })
