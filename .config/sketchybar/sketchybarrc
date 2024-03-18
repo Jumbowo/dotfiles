@@ -3,38 +3,39 @@ ITEM_DIR="$HOME/.config/sketchybar/items"
 FONT_FACE="Hack Nerd Font"
 
 # Bar appearance
-sketchybar --bar height=36            \
+sketchybar --bar height=32            \
                  margin=0             \
                  blur_radius=0        \
                  position=top         \
                  sticky=on            \
-                 padding_left=1       \
-                 padding_right=0      \
-                 color=0x00000000
+                 padding_left=4       \
+                 padding_right=4      \
+                 color=0xCC000000
 
 # Changing defaults
 sketchybar --default icon.font="$FONT_FACE:Bold:17.0"      \
                      icon.color=0xffffffff                 \
                      label.font="$FONT_FACE:Bold:14.0"     \
                      label.color=0xFFEEFFFF                \
-                     padding_left=4                        \
-                     padding_right=3                       \
+                     padding_left=0                        \
+                     padding_right=0                       \
                      y_offset=0                            \
                      label.padding_left=4                  \
                      label.padding_right=10                \
                      icon.padding_left=10                  \
                      icon.padding_right=6                  \
                      background.drawing=on                 \
-                     background.height=29                  \
-                     background.color=0xCC000000           \
-                     background.corner_radius=15           \
-                     background.padding_left=2             \
+                     background.height=21                  \
+                     background.color=0x00000000           \
+                     background.corner_radius=8            \
+                     background.padding_left=3             \
                      background.padding_right=3            
 
 # Left items
 sketchybar --add item space left                                   \
            --set space           script="$PLUGIN_DIR/space.sh"     \
                                  label.padding_left=10             \
+                                 label.color=0xFF91fffd             \
                                  icon.drawing=off                  \
            --subscribe space space_change
 
@@ -42,6 +43,7 @@ sketchybar --add item front_app left                               \
            --set front_app       script="$PLUGIN_DIR/front_app.sh" \
                                  label.padding_left=12             \
                                  icon.drawing=off                  \
+                                 label.color=0xFF91fffd             \
            --subscribe front_app front_app_switched                \
 
            source "$ITEM_DIR/spotify.sh"
@@ -50,13 +52,15 @@ sketchybar --add item front_app left                               \
 sketchybar --add item clock right                                  \
            --set clock   update_freq=30                            \
                          icon=󱛡                                    \
-                         icon.color=0xffed8796                     \
+                         icon.color=0xfff291ff                     \
+                         label.color=0xfff291ff                     \
                          script="$PLUGIN_DIR/clock.sh"             \
                                                                    \
            --add item battery right                                \
            --set battery script="$PLUGIN_DIR/battery.sh"           \
                          update_freq=120                           \
-                         icon.color=0xffa6e3a1                     \
+                         icon.color=0xfffff891                     \
+                         label.color=0xfffff891                     \
            --subscribe battery system_woke power_source_change     \
 
 sketchybar --update

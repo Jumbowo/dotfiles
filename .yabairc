@@ -43,3 +43,6 @@ yabai -m config window_shadow off
 
 # Per-Window transparency
 # yabai -m rule --add app="^Spotify$" opacity=0.85
+
+# github.com/FelixKratz/JankyBorders
+borders active_color=0xCC000000 inactive_color=0xCC000000 style=square hidpi=on width=0.0 &

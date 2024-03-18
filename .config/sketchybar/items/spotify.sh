@@ -7,7 +7,8 @@ sketchybar --add       event           spotify_change $SPOTIFY_EVENT      \
                                        popup.horizontal=on                \
                                        popup.align=center                 \
                                        icon=                             \
-                                       icon.color=0xffa6da95              \
+                                       icon.color=0xff1cd760              \
+                                       label.color=0xff1cd760             \
                                                                           \
            --add       item            spotify.play popup.spotify.name    \
            --set       spotify.play    icon.padding_left=5                \
