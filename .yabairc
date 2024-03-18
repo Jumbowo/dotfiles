@@ -6,10 +6,10 @@ sudo yabai --load-sa
 yabai -m config layout                        bsp
 
 yabai -m config top_padding                   "3"
-yabai -m config bottom_padding                "3"
-yabai -m config left_padding                  "3"
-yabai -m config right_padding                 "3"
-yabai -m config window_gap                    "3"
+yabai -m config bottom_padding                "0"
+yabai -m config left_padding                  "0"
+yabai -m config right_padding                 "0"
+yabai -m config window_gap                    "0"
 
 yabai -m config mouse_follows_focus           off
 yabai -m config focus_follows_mouse           off
@@ -36,13 +36,5 @@ yabai -m config focus_follows_mouse off
 # Disable window shadows
 yabai -m config window_shadow off
 
-# Window transparency
-# yabai -m config window_opacity off
-# yabai -m config normal_window_opacity 1.0
-# yabai -m config active_window_opacity 1.0
-
-# Per-Window transparency
-# yabai -m rule --add app="^Spotify$" opacity=0.85
-
 # github.com/FelixKratz/JankyBorders
-borders active_color=0xCC000000 inactive_color=0xCC000000 style=square hidpi=on width=0.0 &
+borders

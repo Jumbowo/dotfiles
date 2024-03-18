@@ -3,7 +3,7 @@ ITEM_DIR="$HOME/.config/sketchybar/items"
 FONT_FACE="Hack Nerd Font"
 
 # Bar appearance
-sketchybar --bar height=32            \
+sketchybar --bar height=35            \
                  margin=0             \
                  blur_radius=0        \
                  position=top         \
