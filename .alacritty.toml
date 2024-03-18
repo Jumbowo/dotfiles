@@ -16,6 +16,25 @@ hide_when_typing = true
 # [debug]
 # persistent_logging = true
 
+[keyboard]
+bindings = [
+  # Unbind some annoying things
+  { key = "T", mods = "Command", action = "None" },
+  { key = "W", mods = "Command", action = "None" },
+  { key = "N", mods = "Command", action = "None" },
+  { key = "M", mods = "Command", action = "None" },
+  # Tmux navigation with Cmd + number
+  { key = "1", mods = "Command", chars = "\u0001" }, { key = "1", mods = "Command", chars = "1" },
+  { key = "2", mods = "Command", chars = "\u0001" }, { key = "2", mods = "Command", chars = "2" },
+  { key = "3", mods = "Command", chars = "\u0001" }, { key = "3", mods = "Command", chars = "3" },
+  { key = "4", mods = "Command", chars = "\u0001" }, { key = "4", mods = "Command", chars = "4" },
+  { key = "5", mods = "Command", chars = "\u0001" }, { key = "5", mods = "Command", chars = "5" },
+  { key = "6", mods = "Command", chars = "\u0001" }, { key = "6", mods = "Command", chars = "6" },
+  { key = "7", mods = "Command", chars = "\u0001" }, { key = "7", mods = "Command", chars = "7" },
+  { key = "8", mods = "Command", chars = "\u0001" }, { key = "8", mods = "Command", chars = "8" },
+  { key = "9", mods = "Command", chars = "\u0001" }, { key = "9", mods = "Command", chars = "9" },
+]
+
 [colors.primary]
 foreground = "#FFFFFF"
 background = "#000000"

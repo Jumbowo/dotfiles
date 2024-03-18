@@ -68,7 +68,7 @@ return {
         },
         -- Set min and max menu width in cmp
         formatting = {
-          format = function(entry, vim_item)
+          format = function(_, vim_item)
             local label = vim_item.abbr
             local truncated_label = vim.fn.strcharpart(label, 0, MAX_LABEL_WIDTH)
             if truncated_label ~= label then

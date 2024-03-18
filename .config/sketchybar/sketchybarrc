@@ -35,7 +35,7 @@ sketchybar --default icon.font="$FONT_FACE:Bold:17.0"      \
 sketchybar --add item space left                                   \
            --set space           script="$PLUGIN_DIR/space.sh"     \
                                  label.padding_left=10             \
-                                 label.color=0xFF91fffd             \
+                                 label.color=0xFF89DDFF             \
                                  icon.drawing=off                  \
            --subscribe space space_change
 
@@ -43,7 +43,7 @@ sketchybar --add item front_app left                               \
            --set front_app       script="$PLUGIN_DIR/front_app.sh" \
                                  label.padding_left=12             \
                                  icon.drawing=off                  \
-                                 label.color=0xFF91fffd             \
+                                 label.color=0xFF89DDFF             \
            --subscribe front_app front_app_switched                \
 
            source "$ITEM_DIR/spotify.sh"
@@ -52,15 +52,15 @@ sketchybar --add item front_app left                               \
 sketchybar --add item clock right                                  \
            --set clock   update_freq=30                            \
                          icon=󱛡                                    \
-                         icon.color=0xfff291ff                     \
-                         label.color=0xfff291ff                     \
+                         icon.color=0xffc792ea                     \
+                         label.color=0xffc792ea                     \
                          script="$PLUGIN_DIR/clock.sh"             \
                                                                    \
            --add item battery right                                \
            --set battery script="$PLUGIN_DIR/battery.sh"           \
                          update_freq=120                           \
-                         icon.color=0xfffff891                     \
-                         label.color=0xfffff891                     \
+                         icon.color=0xffffcb6b                     \
+                         label.color=0xffffcb6b                     \
            --subscribe battery system_woke power_source_change     \
 
 sketchybar --update
