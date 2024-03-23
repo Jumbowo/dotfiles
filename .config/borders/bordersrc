@@ -6,7 +6,7 @@ options=(
 	hidpi=on
 	active_color=0xCC000000
 	inactive_color=0xCC000000
-  blacklist="alacritty,System Settings,Digital Color Meter,System Information"
+  blacklist="alacritty,System Settings,Digital Color Meter,System Information,Finder,Weather,Activity Monitor,About This Mac,App Store,"
 )
 
 borders "${options[@]}"
