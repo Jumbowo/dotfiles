@@ -64,6 +64,7 @@ brew install zsh-syntax-highlighting
 echo "Installing casks..."
 brew install --cask alacritty
 brew install --cask alfred
+brew install --cask dash
 brew install --cask firefox@developer-edition
 brew install --cask font-hack-nerd-font
 brew install --cask font-jetbrains-mono-nerd-font

@@ -63,5 +63,3 @@ for i = 1, 26, 1 do
     snr
   )
 end
-
-
