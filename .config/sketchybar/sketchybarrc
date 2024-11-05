@@ -32,12 +32,12 @@ sketchybar --default icon.font="$FONT_FACE:Bold:17.0"      \
                      background.padding_right=3            
 
 # Left items
-sketchybar --add item space left                                   \
-           --set space           script="$PLUGIN_DIR/space.sh"     \
-                                 label.padding_left=10             \
-                                 label.color=0xFF89DDFF             \
-                                 icon.drawing=off                  \
-           --subscribe space space_change
+# sketchybar --add item space left                                   \
+#            --set space           script="$PLUGIN_DIR/space.sh"     \
+#                                  label.padding_left=10             \
+#                                  label.color=0xFF89DDFF             \
+#                                  icon.drawing=off                  \
+#            --subscribe space space_change
 
 sketchybar --add item front_app left                               \
            --set front_app       script="$PLUGIN_DIR/front_app.sh" \
