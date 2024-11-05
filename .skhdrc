@@ -28,13 +28,14 @@ lctrl + alt - f : yabai -m window --toggle float
 
 ## Commands below this line require SIP off
 # Space movement
-alt - 1 : yabai -m space --focus 1
-alt - 2 : yabai -m space --focus 2
-alt - 3 : yabai -m space --focus 3
-alt - 4 : yabai -m space --focus 4
-alt - 5 : yabai -m space --focus 5
-alt - 6 : yabai -m space --focus 6
-alt - 7 : yabai -m space --focus 7
+alt - 0x32 : yabai -m space --focus 1 # Backtick/tilda
+alt - 1 : yabai -m space --focus 2
+alt - 2 : yabai -m space --focus 3
+alt - 3 : yabai -m space --focus 4
+alt - 4 : yabai -m space --focus 5
+alt - 5 : yabai -m space --focus 6
+alt - 6 : yabai -m space --focus 7
+alt - 7 : yabai -m space --focus 8
 
 # Toggle opacity current window
 lctrl + alt - o : yabai -m window --opacity 0.85
